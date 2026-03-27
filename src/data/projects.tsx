@@ -346,11 +346,11 @@ const projects: Project[] = [
   },
   {
     id: "paracao-access",
-    category: "Gestión de Clubes",
-    title: "Control de Accesos CAP",
-    src: "/assets/projects-screenshots/paracaolanding.png",
-    screenshots: ["1.png"],
-    live: "Sin link", // Placeholder
+    category: "Gestión de Clubes (Legado)",
+    title: "V1 Control de Accesos CAP",
+    src: "/assets/projects-screenshots/onapb/onapb.png", // Usando imagen de OnAPB como referencia al sucesor
+    screenshots: ["onapb.png"],
+    live: "Sin link (Sistema Interno)",
     skills: {
       frontend: [
         PROJECT_SKILLS.js,
@@ -365,14 +365,13 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            Sistema integral de control de accesos para el Club Atlético paracao
-            Diseñado e implementado desde cero para la validación instantánea de socios.
+            Sistema inicial de control de accesos desarrollado para el Centro Atlético Paracao. 
+            Este proyecto fue la base tecnológica que luego evolucionó para convertirse en la plataforma OnAPB.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
             images={[
-              `${BASE_PATH}/paracaoaccess-1.png`,
-              `${BASE_PATH}/paracaoaccess-2.png`,
+              `${BASE_PATH}/onapb/onapb.png`,
             ]}
           />
         </div>
