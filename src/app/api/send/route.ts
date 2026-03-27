@@ -1,9 +1,10 @@
+export const dynamic = 'force-dynamic';
 import { EmailTemplate } from "@/components/email-template";
 import { config } from "@/data/config";
 import { Resend } from "resend";
 import { z } from "zod";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// No top-level initialization to avoid build-time errors if API key is missing
 
 const Email = z.object({
   fullName: z.string().min(2, "Full name is invalid!"),
@@ -21,6 +22,13 @@ export async function POST(req: Request) {
     } = Email.safeParse(body);
     if (!zodSuccess)
       return Response.json({ error: zodError?.message }, { status: 400 });
+
+    if (!process.env.RESEND_API_KEY) {
+      console.error("RESEND_API_KEY is not defined");
+      return Response.json({ error: "Email service not configured" }, { status: 500 });
+    }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     const { data: resendData, error: resendError } = await resend.emails.send({
       from: "Porfolio <onboarding@resend.dev>",
