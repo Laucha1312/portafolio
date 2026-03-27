@@ -1,45 +1,43 @@
 const config = {
-  title: "Naresh Khatri | Full-Stack Developer",
+  title: "Lautaro Carrere | Lead Developer & Systems Analyst",
   description: {
-    long: "Explore the portfolio of Naresh, a full-stack developer and creative technologist specializing in interactive web experiences, 3D animations, and innovative projects. Discover my latest work, including Coding Ducks, The Booking Desk, Ghostchat, and more. Let's build something amazing together!",
+    long: "Explore the portfolio of Lautaro Carrere, a systems analyst and lead developer specializing in large-scale provincial systems, real-time access control, and BI dashboards. Discover my latest work, including the OnAPB management system and electronic voting platforms. Let's build something impactful together!",
     short:
-      "Discover the portfolio of Naresh, a full-stack developer creating interactive web experiences and innovative projects.",
+      "Discover the portfolio of Lautaro Carrere, a lead developer creating high-impact systems and innovative solutions.",
   },
   keywords: [
-    "Naresh",
+    "Lautaro Carrere",
     "portfolio",
-    "full-stack developer",
-    "creative technologist",
+    "lead developer",
+    "systems analyst",
     "web development",
-    "3D animations",
-    "interactive websites",
-    "Coding Ducks",
-    "The Booking Desk",
-    "Ghostchat",
-    "web design",
-    "GSAP",
-    "React",
+    "OnAPB",
+    "voting platforms",
+    "real-time systems",
+    "PHP",
+    "JavaScript",
+    "Python",
+    "SQL",
     "Next.js",
-    "Spline",
-    "Framer Motion",
+    "Docker",
   ],
-  author: "Naresh Khatri",
-  email: "naresh.khatri2345@gmail.com",
-  site: "https://nareshkhatri.site",
+  author: "Lautaro Carrere",
+  email: "carrerelautaro@gmail.com",
+  site: "https://laucha1312.github.io",
 
   // for github stars button
-  githubUsername: "naresh-khatri",
-  githubRepo: "3d-portfolio",
+  githubUsername: "Laucha1312",
+  githubRepo: "portafolio",
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
   },
   social: {
-    twitter: "https://x.com/nothotchaddi",
-    linkedin: "https://www.linkedin.com/in/naresh-khatri/",
-    instagram: "https://www.instagram.com/hotchaddi",
-    facebook: "https://www.facebook.com/HotChaddi/",
-    github: "https://github.com/Naresh-Khatri",
+    twitter: "https://x.com/Laucha1312", // Placeholder as I don't have his twitter
+    linkedin: "https://www.linkedin.com/in/lautaro-carrere/", // Placeholder but likely correct format
+    instagram: "https://www.instagram.com/lautaro_carrere", // Placeholder
+    facebook: "https://www.facebook.com/lautaro.carrere", // Placeholder
+    github: "https://github.com/Laucha1312",
   },
 };
 export { config };

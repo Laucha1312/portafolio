@@ -7,7 +7,7 @@ import {
   motion,
   type MotionValue,
   type SpringOptions,
-} from 'motion/react';
+} from 'framer-motion';
 import { cn } from '@/lib/utils';
 
 

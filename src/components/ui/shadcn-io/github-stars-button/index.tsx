@@ -8,7 +8,7 @@ import {
   useSpring,
   type HTMLMotionProps,
   type SpringOptions,
-} from 'motion/react';
+} from 'framer-motion';
 
 import { cn } from '@/lib/utils';
 import { SlidingNumber } from '../sliding-number';

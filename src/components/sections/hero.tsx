@@ -11,7 +11,8 @@ import {
 import { usePreloader } from "../preloader";
 import { BlurIn, BoxReveal } from "../reveal-animations";
 import ScrollDownIcon from "../scroll-down-icon";
-import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
+import { SiGithub, SiX } from "react-icons/si";
+import { RiLinkedinBoxFill } from "react-icons/ri";
 import { config } from "@/data/config";
 
 import SectionWrapper from "../ui/section-wrapper";
@@ -135,7 +136,7 @@ const HeroSection = () => {
                       className="cursor-can-hover"
                     >
                       <Button variant={"outline"}>
-                        <SiLinkedin size={24} />
+                        <RiLinkedinBoxFill size={24} />
                       </Button>
                     </Link>
                   </div>
