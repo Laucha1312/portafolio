@@ -21,7 +21,7 @@ import SectionWrapper from "../ui/section-wrapper";
 const ProjectsSection = () => {
   return (
     <SectionWrapper id="projects" className="max-w-7xl mx-auto md:h-[130vh]">
-      <SectionHeader id='projects' title="Projects" />
+      <SectionHeader id='projects' title="Proyectos" />
       <div className="grid grid-cols-1 md:grid-cols-3">
         {projects.map((project, index) => (
           <Modall key={project.src} project={project} />
@@ -64,11 +64,11 @@ const Modall = ({ project }: { project: Project }) => {
           </SmoothScroll>
           <ModalFooter className="gap-4">
             <button className="px-2 py-1 bg-gray-200 text-black dark:bg-black dark:border-black dark:text-white border border-gray-300 rounded-md text-sm w-28">
-              Cancel
+              Cancelar
             </button>
             <Link href={project.live} target="_blank">
               <button className="bg-black text-white dark:bg-white dark:text-black text-sm px-2 py-1 rounded-md border border-black w-28">
-                Visit
+                Visitar
               </button>
             </Link>
           </ModalFooter>

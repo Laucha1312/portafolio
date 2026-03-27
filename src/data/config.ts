@@ -1,9 +1,9 @@
 const config = {
-  title: "Lautaro Carrere | Lead Developer & Systems Analyst",
+  title: "Lautaro Carrere | Analista de Sistemas y Desarrollador Full Stack",
   description: {
-    long: "Explore the portfolio of Lautaro Carrere, a systems analyst and lead developer specializing in large-scale provincial systems, real-time access control, and BI dashboards. Discover my latest work, including the OnAPB management system and electronic voting platforms. Let's build something impactful together!",
+    long: "Explora el portafolio de Lautaro Carrere, analista de sistemas y desarrollador especializado en sistemas provinciales de gran escala, control de accesos en tiempo real y tableros de BI. Descubre mis proyectos, incluyendo el sistema OnAPB y plataformas de voto electrónico. ¡Trabajemos juntos!",
     short:
-      "Discover the portfolio of Lautaro Carrere, a lead developer creating high-impact systems and innovative solutions.",
+      "Descubre el portafolio de Lautaro Carrere, desarrollador de sistemas de alto impacto y soluciones innovadoras.",
   },
   keywords: [
     "Lautaro Carrere",

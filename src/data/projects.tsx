@@ -43,7 +43,7 @@ const ProjectsLinks = ({ live, repo }: { live: string; repo?: string }) => {
         href={live}
       >
         <Button variant={"default"} size={"sm"}>
-          Visit Website
+          Visitar Sitio
           <ArrowUpRight className="ml-3 w-5 h-5" />
         </Button>
       </Link>
@@ -258,10 +258,10 @@ export type Project = {
 const projects: Project[] = [
   {
     id: "onapb",
-    category: "Sports Management",
-    title: "OnAPB Platform",
-    src: "/assets/projects-screenshots/onapb/landing.png",
-    screenshots: ["landing.png"],
+    category: "Gestión Deportiva",
+    title: "Plataforma OnAPB",
+    src: "/assets/projects-screenshots/onapb/onapb.png",
+    screenshots: ["onapb.png"],
     skills: {
       frontend: [
         PROJECT_SKILLS.js,
@@ -280,21 +280,21 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono text-2xl text-center">
-            OnAPB = Complete Management for Basketball Associations
+            OnAPB = Gestión Integral para Asociaciones de Básquet
           </TypographyP>
           <TypographyP className="font-mono ">
-            Lideré la refactorización completa del sistema de la Asociación Paranaense de Básquet. 
+            Lideré la refactorización completa del sistema de la Asociación Paranaense de Básquet.
             Desde la gestión de credenciales y pagos hasta un sistema de notificaciones en tiempo real.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
-          <TypographyH3 className="my-4 mt-8">Access Control</TypographyH3>
+          <TypographyH3 className="my-4 mt-8">Control de Accesos</TypographyH3>
           <p className="font-mono mb-2">
-            Implementé un sistema de control de accesos vía QR que redujo los errores de entrada a cero, 
+            Implementé un sistema de control de accesos vía QR que redujo los errores de entrada a cero,
             permitiendo una validación instantánea y segura en cada partido.
           </p>
           <SlideShow
             images={[
-              `${BASE_PATH}/onapb/qr-system.png`,
+              `${BASE_PATH}/onapb/onapb.png`,
             ]}
           />
         </div>
@@ -303,8 +303,8 @@ const projects: Project[] = [
   },
   {
     id: "voting-platform",
-    category: "Government / E-Voting",
-    title: "Electronic Voting Platform",
+    category: "Gobierno / Voto Electrónico",
+    title: "Plataforma de Voto Electrónico",
     src: "/assets/projects-screenshots/voting/landing.png",
     screenshots: ["landing.png"],
     live: "https://modernizacion.entrerios.gov.ar/", // Placeholder
@@ -330,9 +330,9 @@ const projects: Project[] = [
             Este sistema permitió modernizar los procesos legislativos municipales, asegurando transparencia y velocidad en el conteo de votos.
           </p>
           <SlideShow images={[`${BASE_PATH}/voting/system.png`]} />
-          <TypographyH3 className="my-4 mt-8">BI Dashboards</TypographyH3>
+          <TypographyH3 className="my-4 mt-8">Tableros de BI</TypographyH3>
           <p className="font-mono mb-2">
-            Construcción de tableros de Business Intelligence en Looker Studio para visualizar métricas provinciales en tiempo real, 
+            Construcción de tableros de Business Intelligence en Looker Studio para visualizar métricas provinciales en tiempo real,
             facilitando la toma de decisiones basada en datos.
           </p>
           <SlideShow
@@ -345,12 +345,12 @@ const projects: Project[] = [
     },
   },
   {
-    id: "talleres-access",
-    category: "Club Management",
-    title: "CAT Access Control",
-    src: "/assets/projects-screenshots/talleres/landing.png",
+    id: "paracao-access",
+    category: "Gestión de Clubes",
+    title: "Control de Accesos CAP",
+    src: "/assets/projects-screenshots/paracaolanding.png",
     screenshots: ["1.png"],
-    live: "https://catalleres.pga.com.ar/", // Placeholder
+    live: "Sin link", // Placeholder
     skills: {
       frontend: [
         PROJECT_SKILLS.js,
@@ -365,14 +365,14 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            Sistema integral de control de accesos para el Club Atlético Talleres. 
+            Sistema integral de control de accesos para el Club Atlético paracao
             Diseñado e implementado desde cero para la validación instantánea de socios.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow
             images={[
-              `${BASE_PATH}/talleres/access-1.png`,
-              `${BASE_PATH}/talleres/access-2.png`,
+              `${BASE_PATH}/paracaoaccess-1.png`,
+              `${BASE_PATH}/paracaoaccess-2.png`,
             ]}
           />
         </div>
