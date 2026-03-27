@@ -35,6 +35,7 @@ const ContactForm = () => {
       });
       const data = await res.json();
       if (data.error) throw new Error(data.error);
+
       toast({
         title: "¡Gracias!",
         description: "Me pondré en contacto contigo lo antes posible.",
@@ -49,10 +50,10 @@ const ContactForm = () => {
         router.push("/");
         clearTimeout(timer);
       }, 1000);
-    } catch (err) {
+    } catch (err: any) {
       toast({
         title: "Error",
-        description: "¡Algo salió mal! Por favor, revisa los campos.",
+        description: err.message || "¡Algo salió mal! Por favor, revisa los campos.",
         className: cn(
           "top-0 w-full flex justify-center fixed md:max-w-7xl md:top-4 md:right-4"
         ),
